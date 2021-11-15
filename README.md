@@ -8,9 +8,13 @@ activate env
 conda activate wineq
 ```
 create a requirement.txt file
+
 write in requirements.txt
+
 dvc
+
 dvc[gdrive]
+
 sklearn
 
 install the requirement.txt

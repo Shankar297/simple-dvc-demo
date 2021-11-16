@@ -1,3 +1,9 @@
+# local packages install
+-e .
+
+# third party packages
 dvc
 dvc[gdrive]
 sklearn
+pytest
+tox

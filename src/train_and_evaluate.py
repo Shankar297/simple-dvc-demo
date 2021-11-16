@@ -48,6 +48,7 @@ def train_and_evaluate(config_path):
         alpha=alpha, 
         l1_ratio=l1_ratio, 
         random_state=random_state)
+
     lr.fit(train_x, train_y)
 
     predicted_qualities = lr.predict(test_x)

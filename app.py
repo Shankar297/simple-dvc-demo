@@ -5,7 +5,6 @@ import joblib
 import numpy as np
 
 
-params_path = "params.yaml"
 webapp_root = "webapp"
 
 static_dir = os.path.join(webapp_root, "static")
@@ -42,10 +41,10 @@ def index():
     if request.method == "POST":
         try:
             if request.form:
+                print(request.form)
                 data_received = dict(request.form).values()
                 print("data received",data_received)
                 result = []
-                
                 for sublist in data_received:
                     for item in sublist:
                         result.append(item)

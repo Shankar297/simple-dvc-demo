@@ -7,3 +7,6 @@ dvc[gdrive]
 sklearn
 pytest
 tox
+flake8
+flask
+gunicorn

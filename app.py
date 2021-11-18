@@ -48,6 +48,7 @@ def index():
                     for item in sublist:
                         result.append(item)
                 data_converted = [list(map(float, result))]
+                print(data_converted)
                 response = predict(data_converted)
                 print(response)
                 return render_template("index.html", response=response)

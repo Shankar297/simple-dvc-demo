@@ -23,6 +23,7 @@ def index():
                 print("data received", data_request)
                 response = prediction.form_response(data_request)
                 print(response)
+                response = round(response,4)
                 return render_template("index.html", response=response)
 
             elif request.json:

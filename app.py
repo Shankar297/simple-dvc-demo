@@ -43,12 +43,15 @@ def index():
         try:
             if request.form:
                 data_received = dict(request.form).values()
+                print("data received",data_received)
                 result = []
+                
                 for sublist in data_received:
                     for item in sublist:
                         result.append(item)
+                print("looping",result)
                 data_converted = [list(map(float, result))]
-                print(data_converted)
+                print("data converted",data_converted)
                 response = predict(data_converted)
                 print(response)
                 return render_template("index.html", response=response)
